@@ -1,16 +1,18 @@
 source 'https://rubygems.org'
+ruby '2.5.0'
 
 gem 'rails',                   '5.0.2'
 gem 'bcrypt',                  '3.1.11'
 gem 'faker',                   '1.6.6'
-gem 'puma',                    '3.4.0'
+gem 'puma'
 gem 'sass-rails',              '5.0.6'
 gem 'uglifier',                '3.0.0'
 gem 'coffee-rails',            '4.2.1'
 gem 'jquery-rails',            '4.1.1'
 gem 'turbolinks',              '5.0.0'
 gem 'jbuilder',                '2.4.1'
-gem 'redis', '~>3.2' 
+gem 'redis', '~>3.2'
+gem 'kramdown'
 # gem 'anycable-rails'
 
 group :development, :test do
@@ -33,7 +35,7 @@ group :test do
 end
 
 group :production do
-  gem 'pg',   '0.18.4'
+  gem 'pg'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
